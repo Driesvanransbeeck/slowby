@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("...");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("...");
+  font-display: swap;
+}
+
+/*
+#09c;
+#ff0080;
+#081c73;
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #1E757C;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Source Sans Pro", "Helvetica Nueue", Helvetica, Arial,
+    sans-serif;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  align-items: center;
+  width: 60rem;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.content__title {
+  letter-spacing: 0.2rem;
+  line-height: 1.4;
+  margin: 2rem auto 0;
+  width: 50rem;
+  text-align: center;
+  font-family: "Montserrat", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.content__title span {
+  color: #081c73;
+}
+
+.content__stay-tuned {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 1.4;
+  margin: 2rem auto 0;
+  width: 50rem;
+  text-align: center;
+  font-family: "Montserrat", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+}
+
+.logo-container {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 80px 20px #FB8A71;
+  margin-bottom: 4rem;
+}
+
+.logo-container img {
+  max-width: 70%;
+  margin-left: 0.5rem;
+}
+
+.content__signup {
+  width: 39rem;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.content__signup input {
+  height: 4.2rem;
+  margin: 0;
+  border: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.content__signup input[type="email"] {
+  flex-grow: 1;
+  outline: 0;
+  box-shadow: none;
+}
+.content__signup input[type="submit"] {
+  background: #FB8A71;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.message-us {
+  font-size: 1.6rem;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.longlife-logo {
+  width: 15rem;
+  position: absolute;
+  bottom: 5rem;
+  left: calc(50% - 8rem);
+}
+
+.longlife-logo img {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .logo-container {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 3rem;
+  }
+  .content__stay-tuned {
+    width: 28rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }  
+  .content__title {
+    width: 28rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .content__signup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content__signup input {
+    height: 3.6rem;
+    margin: 0;
+    border: 0;
+    padding: 0.6rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  .content__signup input[type="email"] {
+    flex-grow: 0;
+  }
+  .content__signup input[type="submit"] {
+    font-size: 1.3rem;
+  }
+  .message-us {
+    font-size: 1.4rem;
+  }
+  .longlife-logo {
+    width: 18rem;
+    bottom: 2rem;
+    left: calc(50% - 9rem);
+  }
+}
+
+@media (max-height: 700px) {
+  .longlife-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .message-us {
+    font-size: 1.4rem;
+  }
+}
+
+.button1 {
+  background-color: #FB8A71;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.button1:hover {
+  background-color: #E08464;
+  color: white;
+}
